@@ -5,17 +5,6 @@ function home() {
   const homeContainer = document.createElement('div');
   homeContainer.classList.add('homeContainer');
 
-  const menu = document.createElement('div');
-
-  const restaurantName = document.createElement('h3');
-  restaurantName.classList.add('restaurantName');
-  restaurantName.textContent = 'Stakehouse';
-
-  menu.appendChild(restaurantName);
-
-  const heroHome = document.createElement('div');
-  heroHome.classList.add('heroHome');
-
   const titleContainer = document.createElement('div');
   titleContainer.classList.add('titleContainer');
   const title = document.createElement('h1');
@@ -29,7 +18,7 @@ function home() {
   titleContainer.appendChild(title);
   titleContainer.appendChild(button);
 
-  heroHome.appendChild(titleContainer);
+  homeContainer.appendChild(titleContainer);
 
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('imageContainer');
@@ -38,10 +27,8 @@ function home() {
   image.src = grilledImage;
 
   imageContainer.appendChild(image);
-  heroHome.appendChild(imageContainer);
+  homeContainer.appendChild(imageContainer);
 
-  homeContainer.appendChild(menu);
-  homeContainer.appendChild(heroHome);
   return homeContainer;
 }
 export { home };
