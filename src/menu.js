@@ -37,6 +37,8 @@ function menu() {
   card.appendChild(cardTitleContainer);
   card.appendChild(cardDescriptionContainer);
   card.appendChild(cardButtonContainer);
+
+  menuContainer.appendChild(card);
   // END FIRST CARD
 
   // SECOND CARD
@@ -68,6 +70,8 @@ function menu() {
   card1.appendChild(card1TitleContainer);
   card1.appendChild(card1DescriptionContainer);
   card1.appendChild(card1ButtonContainer);
+
+  menuContainer.appendChild(card1);
   // END SECOND CARD
 
   // THIRD CARD
@@ -99,6 +103,8 @@ function menu() {
   card2.appendChild(card2TitleContainer);
   card2.appendChild(card2DescriptionContainer);
   card2.appendChild(card2ButtonContainer);
+
+  menuContainer.appendChild(card2);
   // END THIRD CARD
 
   // FOURTH CARD
@@ -130,6 +136,8 @@ function menu() {
   card3.appendChild(card3TitleContainer);
   card3.appendChild(card3DescriptionContainer);
   card3.appendChild(card3ButtonContainer);
+
+  menuContainer.appendChild(card3);
   // END FOURTH CARD
 
   // FIFTH CARD
@@ -161,6 +169,8 @@ function menu() {
   card4.appendChild(card4TitleContainer);
   card4.appendChild(card4DescriptionContainer);
   card4.appendChild(card4ButtonContainer);
+
+  menuContainer.appendChild(card4);
   // END FIFTH CARD
 
   // SIXTH CARD
@@ -192,14 +202,10 @@ function menu() {
   card5.appendChild(card5TitleContainer);
   card5.appendChild(card5DescriptionContainer);
   card5.appendChild(card5ButtonContainer);
+
+  menuContainer.appendChild(card5);
   // END SIXTH CARD
 
-  menuContainer.appendChild(card);
-  menuContainer.appendChild(card1);
-  menuContainer.appendChild(card2);
-  menuContainer.appendChild(card3);
-  menuContainer.appendChild(card4);
-  menuContainer.appendChild(card5);
   return menuContainer;
 }
 export { menu };
