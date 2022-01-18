@@ -29,6 +29,12 @@ function menu() {
   const cardButtonContainer = document.createElement('div');
   cardButtonContainer.classList.add('cardButtonContainer');
 
+  const cardPrice = document.createElement('p');
+  cardPrice.classList.add('price');
+  cardPrice.textContent = '$ 8';
+
+  cardButtonContainer.appendChild(cardPrice);
+
   const cardButton = document.createElement('button');
   cardButton.classList.add('cta');
   cardButton.textContent = 'Order now';
@@ -61,6 +67,12 @@ function menu() {
 
   const card1ButtonContainer = document.createElement('div');
   card1ButtonContainer.classList.add('cardButtonContainer');
+
+  const card1Price = document.createElement('p');
+  card1Price.classList.add('price');
+  card1Price.textContent = '$ 8';
+
+  card1ButtonContainer.appendChild(card1Price);
 
   const card1Button = document.createElement('button');
   card1Button.classList.add('cta');
@@ -95,6 +107,12 @@ function menu() {
   const card2ButtonContainer = document.createElement('div');
   card2ButtonContainer.classList.add('cardButtonContainer');
 
+  const card2Price = document.createElement('p');
+  card2Price.classList.add('price');
+  card2Price.textContent = '$ 8';
+
+  card2ButtonContainer.appendChild(card2Price);
+
   const card2Button = document.createElement('button');
   card2Button.classList.add('cta');
   card2Button.textContent = 'Order now';
@@ -127,6 +145,12 @@ function menu() {
 
   const card3ButtonContainer = document.createElement('div');
   card3ButtonContainer.classList.add('cardButtonContainer');
+
+  const card3Price = document.createElement('p');
+  card3Price.classList.add('price');
+  card3Price.textContent = '$ 8';
+
+  card3ButtonContainer.appendChild(card3Price);
 
   const card3Button = document.createElement('button');
   card3Button.classList.add('cta');
@@ -161,6 +185,12 @@ function menu() {
   const card4ButtonContainer = document.createElement('div');
   card4ButtonContainer.classList.add('cardButtonContainer');
 
+  const card4Price = document.createElement('p');
+  card4Price.classList.add('price');
+  card4Price.textContent = '$ 8';
+
+  card4ButtonContainer.appendChild(card4Price);
+
   const card4Button = document.createElement('button');
   card4Button.classList.add('cta');
   card4Button.textContent = 'Order now';
@@ -193,6 +223,12 @@ function menu() {
 
   const card5ButtonContainer = document.createElement('div');
   card5ButtonContainer.classList.add('cardButtonContainer');
+
+  const card5Price = document.createElement('p');
+  card5Price.classList.add('price');
+  card5Price.textContent = '$ 8';
+
+  card5ButtonContainer.appendChild(card5Price);
 
   const card5Button = document.createElement('button');
   card5Button.classList.add('cta');
