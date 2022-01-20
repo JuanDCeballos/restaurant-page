@@ -9,8 +9,8 @@ function home() {
   titleContainer.classList.add('titleContainer');
   const title = document.createElement('h1');
   title.classList.add('title');
-  title.textContent = 'A Premium And Authentic Steakhouse';
-
+  title.innerHTML =
+    "A premium and authentic  <span class='colorWord'>Steakhouse</span>";
   const button = document.createElement('button');
   button.classList.add('cta');
   button.textContent = 'Order now';
