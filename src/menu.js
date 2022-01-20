@@ -16,6 +16,7 @@ function menu() {
   cardTitleContainer.classList.add('cardTitleContainer');
 
   const cardTitle = document.createElement('h3');
+  cardTitle.classList.add('cardTitleText');
   cardTitle.textContent = 'Grilled potatoes';
   cardTitleContainer.appendChild(cardTitle);
 
@@ -36,7 +37,7 @@ function menu() {
   cardButtonContainer.appendChild(cardPrice);
 
   const cardButton = document.createElement('button');
-  cardButton.classList.add('cta');
+  cardButton.classList.add('cta', 'cta-card');
   cardButton.textContent = 'Order now';
   cardButtonContainer.appendChild(cardButton);
 
@@ -55,6 +56,7 @@ function menu() {
   card1TitleContainer.classList.add('cardTitleContainer');
 
   const card1Title = document.createElement('h3');
+  card1Title.classList.add('cardTitleText');
   card1Title.textContent = 'Grilled chicken wings';
   card1TitleContainer.appendChild(card1Title);
 
@@ -75,7 +77,7 @@ function menu() {
   card1ButtonContainer.appendChild(card1Price);
 
   const card1Button = document.createElement('button');
-  card1Button.classList.add('cta');
+  card1Button.classList.add('cta', 'cta-card');
   card1Button.textContent = 'Order now';
   card1ButtonContainer.appendChild(card1Button);
 
@@ -94,6 +96,7 @@ function menu() {
   card2TitleContainer.classList.add('cardTitleContainer');
 
   const card2Title = document.createElement('h3');
+  card2Title.classList.add('cardTitleText');
   card2Title.textContent = 'Grilled corn';
   card2TitleContainer.appendChild(card2Title);
 
@@ -114,7 +117,7 @@ function menu() {
   card2ButtonContainer.appendChild(card2Price);
 
   const card2Button = document.createElement('button');
-  card2Button.classList.add('cta');
+  card2Button.classList.add('cta', 'cta-card');
   card2Button.textContent = 'Order now';
   card2ButtonContainer.appendChild(card2Button);
 
@@ -133,6 +136,7 @@ function menu() {
   card3TitleContainer.classList.add('cardTitleContainer');
 
   const card3Title = document.createElement('h3');
+  card3Title.classList.add('cardTitleText');
   card3Title.textContent = 'Grilled burger';
   card3TitleContainer.appendChild(card3Title);
 
@@ -153,7 +157,7 @@ function menu() {
   card3ButtonContainer.appendChild(card3Price);
 
   const card3Button = document.createElement('button');
-  card3Button.classList.add('cta');
+  card3Button.classList.add('cta', 'cta-card');
   card3Button.textContent = 'Order now';
   card3ButtonContainer.appendChild(card3Button);
 
@@ -172,6 +176,7 @@ function menu() {
   card4TitleContainer.classList.add('cardTitleContainer');
 
   const card4Title = document.createElement('h3');
+  card4Title.classList.add('cardTitleText');
   card4Title.textContent = 'Grilled pizza';
   card4TitleContainer.appendChild(card4Title);
 
@@ -192,7 +197,7 @@ function menu() {
   card4ButtonContainer.appendChild(card4Price);
 
   const card4Button = document.createElement('button');
-  card4Button.classList.add('cta');
+  card4Button.classList.add('cta', 'cta-card');
   card4Button.textContent = 'Order now';
   card4ButtonContainer.appendChild(card4Button);
 
@@ -211,6 +216,7 @@ function menu() {
   card5TitleContainer.classList.add('cardTitleContainer');
 
   const card5Title = document.createElement('h3');
+  card5Title.classList.add('cardTitleText');
   card5Title.textContent = 'Grilled salmon';
   card5TitleContainer.appendChild(card5Title);
 
@@ -231,7 +237,7 @@ function menu() {
   card5ButtonContainer.appendChild(card5Price);
 
   const card5Button = document.createElement('button');
-  card5Button.classList.add('cta');
+  card5Button.classList.add('cta', 'cta-card');
   card5Button.textContent = 'Order now';
   card5ButtonContainer.appendChild(card5Button);
 
