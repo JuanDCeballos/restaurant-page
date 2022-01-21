@@ -1,3 +1,4 @@
+import { menu } from './menu';
 import './styles.css';
 import grilledImage from '../images/Grilled.png';
 
@@ -14,6 +15,11 @@ function home() {
   const button = document.createElement('button');
   button.classList.add('cta');
   button.textContent = 'Order now';
+
+  button.addEventListener('click', () => {
+    content.innerHTML = '';
+    content.appendChild(menu());
+  });
 
   titleContainer.appendChild(title);
   titleContainer.appendChild(button);
