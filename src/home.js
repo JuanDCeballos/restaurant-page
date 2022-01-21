@@ -1,3 +1,4 @@
+import { content } from './index.js';
 import { menu } from './menu';
 import './styles.css';
 import grilledImage from '../images/Grilled.png';
