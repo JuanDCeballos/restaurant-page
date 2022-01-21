@@ -1,4 +1,5 @@
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+import './styles.css';
 
 function menu() {
   const menuContainer = document.createElement('div');
