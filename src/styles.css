@@ -13,7 +13,6 @@
   --card-bg: #3a3a3e;
   --cta-bg: #f8b363;
   --highlighted-color: #d07b69;
-  --card-title: #f9f871;
 }
 
 body {
@@ -25,28 +24,7 @@ body {
   color: var(--white);
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.subTitle {
-  font-family: 'Neonderthaw', cursive;
-  color: var(--highlighted-color);
-}
-
-.tabs ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  cursor: pointer;
-}
-
-.tabs ul li {
-  font-weight: 700;
-  font-size: 18px;
-}
+/* GENERAL STYLES */
 
 #content {
   flex: 1;
@@ -75,6 +53,50 @@ header {
   transform: scale(1.2);
   box-shadow: 0 10px 25px rgb(208 123 105 / 40%);
 }
+
+/* END GENERAL STYLES */
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.subTitle {
+  font-family: 'Neonderthaw', cursive;
+  color: var(--highlighted-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subTitle:hover {
+  text-shadow: 0 10px 5px rgb(208 123 105 / 100%);
+}
+
+.tabs ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.tabs ul li {
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.tabs ul li:hover {
+  border-bottom: 5px solid var(--cta-bg);
+}
+
+.tabs ul li.active {
+  border-bottom: 5px solid var(--cta-bg);
+}
+
+/* END HEADER */
 
 /* HOME */
 
@@ -189,6 +211,8 @@ header {
 
 /* END CONTACT */
 
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 1030px) {
   .homeContainer {
     flex-direction: column;
@@ -207,3 +231,5 @@ header {
     gap: 20px;
   }
 }
+
+/* END QUERIES */
