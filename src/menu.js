@@ -9,10 +9,6 @@ function menu() {
   const card = document.createElement('div');
   card.classList.add('card');
 
-  // const pe = document.createElement('i');
-  // pe.innerHTML = '<i class="fas fa-user"></i>';
-  // card.appendChild(pe);
-
   const cardTitleContainer = document.createElement('div');
   cardTitleContainer.classList.add('cardTitleContainer');
 
