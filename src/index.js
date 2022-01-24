@@ -32,11 +32,11 @@ contactTab.addEventListener('click', () => {
   content.appendChild(contact());
 });
 
-const tabLinksArr = Array.from(tabLinks);
+export const tabLinksArr = Array.from(tabLinks);
 
-let activeLink;
+export let activeLink;
 
-function checkActiveLink(arr) {
+export function checkActiveLink(arr) {
   arr.some((link) =>
     link.classList.contains('active') ? (activeLink = link) : false
   );
@@ -53,5 +53,5 @@ tabLinksArr.forEach((link) => {
 
 subTitleText.addEventListener('click', () => {
   activeLink.classList.remove('active');
-  activeLink = tabLinksArr[0].classList.add('active');
+  tabLinksArr[0].classList.add('active');
 });
