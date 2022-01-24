@@ -8,6 +8,7 @@ const menuTab = document.querySelector('#menu');
 const contactTab = document.querySelector('#contact');
 const subTitle = document.querySelector('.subTitle');
 const tabLinks = document.querySelectorAll('.link');
+const subTitleText = document.querySelector('.subTitle');
 
 content.appendChild(home());
 
@@ -34,14 +35,23 @@ contactTab.addEventListener('click', () => {
 const tabLinksArr = Array.from(tabLinks);
 
 let activeLink;
-tabLinksArr.some((link) =>
-  link.classList.contains('active') ? (activeLink = link) : false
-);
+
+function checkActiveLink(arr) {
+  arr.some((link) =>
+    link.classList.contains('active') ? (activeLink = link) : false
+  );
+}
 
 tabLinksArr.forEach((link) => {
   link.addEventListener('click', (e) => {
+    checkActiveLink(tabLinksArr);
     activeLink.classList.remove('active');
     e.target.classList.add('active');
     activeLink = e.target;
   });
+});
+
+subTitleText.addEventListener('click', () => {
+  activeLink.classList.remove('active');
+  activeLink = tabLinksArr[0].classList.add('active');
 });
