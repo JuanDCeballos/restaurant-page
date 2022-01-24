@@ -1,4 +1,4 @@
-import { content } from './index.js';
+import { content, activeLink, tabLinksArr, checkActiveLink } from './index.js';
 import { menu } from './menu';
 import './styles.css';
 import grilledImage from '../images/Grilled.png';
@@ -18,6 +18,9 @@ function home() {
   button.textContent = 'Order now';
 
   button.addEventListener('click', () => {
+    checkActiveLink(tabLinksArr);
+    activeLink.classList.remove('active');
+    tabLinksArr[1].classList.add('active');
     content.innerHTML = '';
     content.appendChild(menu());
   });
