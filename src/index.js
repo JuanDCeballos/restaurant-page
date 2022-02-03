@@ -52,6 +52,7 @@ tabLinksArr.forEach((link) => {
 });
 
 subTitleText.addEventListener('click', () => {
+  checkActiveLink(tabLinksArr);
   activeLink.classList.remove('active');
   activeLink = tabLinksArr[0].classList.add('active');
 });
